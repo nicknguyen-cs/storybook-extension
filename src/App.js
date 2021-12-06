@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { Heading, Button } from '@contentstack/venus-components';
 import '@contentstack/venus-components/build/main.css';
