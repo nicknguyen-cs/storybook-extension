@@ -6,10 +6,9 @@ import reportWebVitals from './reportWebVitals';
 import ContentstackUIExtension from "@contentstack/ui-extensions-sdk";
 
 ContentstackUIExtension.init().then((extension) => {
-  
   ReactDOM.render(
     <React.StrictMode>
-      <App />
+      <App stack={extension} />
     </React.StrictMode>,
     document.getElementById('root')
   );

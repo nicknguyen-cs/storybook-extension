@@ -1,19 +1,22 @@
+import React, { useEffect, useState } from "react";
 import './App.css';
-import { Heading, Button } from '@contentstack/venus-components';
+import { Radio, Select, Heading, Button } from '@contentstack/venus-components';
 import '@contentstack/venus-components/build/main.css';
+function App(props) {
 
-function App() {
   return (
     <div>
-      <Heading tagName="h2" text="Extension building using Venus component" />
-      <Button
-        buttonType="primary"
-        onClick={() => {
-          console.log('You clicked on Venus button');
-        }}
-      >
-        Click on me
-      </Button>
+      <Heading tagName="h2" text="New extensions" />
+      <span>
+        <Button 
+          buttonType="secondary"
+          icon="PublishAsset"
+          >
+          Upload New File
+        </Button>
+        
+        
+      </span>
     </div>
   );
 }
